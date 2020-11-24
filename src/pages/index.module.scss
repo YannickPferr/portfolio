@@ -1,5 +1,6 @@
-body{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
 }
 
 a {
@@ -11,16 +12,18 @@ img {
   width: 100%;
 }
 
+.vertical-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .scrollContainer {
-  //scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: calc(100vh - 60px);
   margin-top: 60px;
 }
 
 .scrollElement {
   position: relative;
-  //scroll-snap-align: start;
 }
 
 .flex {
@@ -29,7 +32,6 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  //substract header height
 
   @media screen and(min-width: 60em) {
     flex-direction: row;
@@ -37,8 +39,7 @@ img {
 }
 
 .header {
-  @extend .scrollElement;
-
+  @extend .scrollElement, .vertical-center;
   height: calc(100vh - 60px);
   text-align: center;
   color: white;
@@ -64,14 +65,6 @@ img {
   background-color: white;
   color: #0083b0;
   cursor: pointer;
-}
-
-.hero-container {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .main-section {
@@ -157,10 +150,6 @@ img {
   }
 }
 
-.projects-row:last-child {
-  scroll-snap-align: start;
-}
-
 .projects-column {
   flex-basis: 1 1 48%;
   margin: 1%;
@@ -174,9 +163,8 @@ img {
 }
 
 .contact {
-  position: relative;
-  scroll-snap-align: start;
-  height: calc(80vh - 60px);
+  @extend .vertical-center;
+  min-height: calc(80vh - 60px);
   text-align: center;
   color: white;
   background: #00b4db; /* fallback for old browsers */
@@ -205,8 +193,8 @@ img {
 }
 
 .footer {
-  position: relative;
-  height: 20vh;
+  @extend .vertical-center;
+  min-height: 20vh;
   text-align: center;
   color: white;
   background: #333;

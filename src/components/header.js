@@ -1,22 +1,22 @@
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
 import { GrMenu } from "react-icons/gr";
 
-import scrollTo from 'gatsby-plugin-smoothscroll'
+import {Link} from 'react-scroll'
 
 import styles from "./header.module.scss"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle }) => ( 
   <header className={styles.header}>
     <nav className={styles.navMain}>
-      <div className={styles.navItemHome} onClick={() => scrollTo('#home')}>Home</div>
+      <div className={styles.navItemHome}><Link to="home" smooth={true} offset={-60}>Home</Link></div>
       <div className={styles.navItemList}>
-        <div className={styles.navItem} onClick={() => scrollTo('#aboutme')}>About</div>
-        <div className={styles.navItem}>Experience</div>
-        <div className={styles.navItem} onClick={() => scrollTo('#projects')}>Projects</div>
-        <div className={styles.navItem} onClick={() => scrollTo('#contact')}>Contact</div>
+        <div className={styles.navItem}><Link to="aboutme" smooth={true} offset={-60}>About</Link></div>
+        <div className={styles.navItem}><Link to="experience" smooth={true} offset={-60}>Experience</Link></div>
+        <div className={styles.navItem}><Link to="projects" smooth={true} offset={-60}>Projects</Link></div>
+        <div className={styles.navItem}><Link to="contact" smooth={true} offset={-60}>Contact</Link></div>
       </div>
     </nav>
   </header>

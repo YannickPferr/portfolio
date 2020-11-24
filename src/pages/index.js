@@ -1,10 +1,11 @@
 import React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 
 import Layout from "../components/layout"
-import scrollTo from 'gatsby-plugin-smoothscroll'
 import { FaFilePdf, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa"
+
+import { Link } from 'react-scroll'
 
 import ContactForm from "../components/contact-form"
 
@@ -28,13 +29,13 @@ const IndexPage = () => {
   return (
     <Layout title="Home">
       <div className={styles.scrollContainer}>
-        <header id="home" className={styles.header}>
-          <div className={styles.heroContainer}>
+        <div>
+          <header id="home" className={styles.header}>
             <h1>Yannick Pferr</h1>
             <h2>Business &amp; Information Systems Student</h2>
-            <button onClick={() => scrollTo('#contact')}>Get in touch</button>
-          </div>
-        </header>
+            <Link to="contact" smooth={true} offset={-60}><button>Get in touch</button></Link>
+          </header>
+        </div>
 
         <section className={styles.mainSection}>
           {/* ABOUT ME */}
@@ -97,20 +98,18 @@ const IndexPage = () => {
           </section>
         </section>
 
+
         <div id="contact" className={styles.contact}>
-          <div className={styles.heroContainer}>
-            <h1>Contact</h1>
-            <ContactForm/>
-          </div>
+          <h1>Contact</h1>
+          <ContactForm />
         </div>
-        <footer id="footer" className={styles.footer}>
-          <div className={styles.heroContainer}>
+        <footer className={styles.footer}>
           <div className={styles.contactIcons}><a href="mailto:yannick@pferr.de"><FaEnvelope /></a><a href="https://www.linkedin.com/in/yannick-pferr-22216619a/"><FaLinkedin /></a><a href="https://github.com/YannickPferr"><FaGithub /></a></div>
           <hr></hr>
           <p>2020 © Yannick Pferr</p>
-          </div>
         </footer>
       </div>
+
     </Layout>
   )
 }
