@@ -2,32 +2,23 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import { GrMenu } from "react-icons/gr";
+
+import scrollTo from 'gatsby-plugin-smoothscroll'
+
+import styles from "./header.module.scss"
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+  <header className={styles.header}>
+    <nav className={styles.navMain}>
+      <div className={styles.navItemHome} onClick={() => scrollTo('#home')}>Home</div>
+      <div className={styles.navItemList}>
+        <div className={styles.navItem} onClick={() => scrollTo('#aboutme')}>About</div>
+        <div className={styles.navItem}>Experience</div>
+        <div className={styles.navItem} onClick={() => scrollTo('#projects')}>Projects</div>
+        <div className={styles.navItem} onClick={() => scrollTo('#contact')}>Contact</div>
+      </div>
+    </nav>
   </header>
 )
 
