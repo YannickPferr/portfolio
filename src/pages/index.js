@@ -86,7 +86,7 @@ const IndexPage = () => {
                   <h1>Tetris Game</h1>
                   <p>
                     Tetris Game implemented in Java.
-            </p>
+                  </p>
                 </div>
                 <div className={styles.projectsColumn}>
                   <img

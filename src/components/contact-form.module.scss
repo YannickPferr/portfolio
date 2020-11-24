@@ -1,6 +1,8 @@
 .form {
   width: 50%;
   margin: 0 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .form-input {
@@ -11,6 +13,8 @@
   border: solid 0.1em white;
   outline: none;
   resize: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .form-submit {
@@ -21,6 +25,8 @@
   border: 2px solid white;
   color: white;
   font-weight: bold;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .form-submit:hover {
