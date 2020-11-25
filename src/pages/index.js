@@ -120,7 +120,7 @@ const IndexPage = () => {
                 </div>
                 <div className={styles.projectsColumn}>
                   <img
-                    src="https://raw.githubusercontent.com/YannickPferr/Gorillas/main/gorillas.JPG"></img>
+                    src="https://raw.githubusercontent.com/YannickPferr/blog/main/fillingFoodSpot.png"></img>
                 </div>
               </div>
             </div>
