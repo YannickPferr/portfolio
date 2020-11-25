@@ -32,7 +32,7 @@ const ContactForm = ({ input }) => {
                 className={styles.formSubmit}
                 type="submit"
                 name="submit"
-                value="Submit"
+                value="Get in touch"
             />
         </form>
     )

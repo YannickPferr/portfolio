@@ -33,7 +33,8 @@ const IndexPage = () => {
           <header id="home" className={styles.header}>
             <h1>Yannick Pferr</h1>
             <h2>Business &amp; Information Systems Student</h2>
-            <Link to="contact" smooth={true} offset={-60}><button>Get in touch</button></Link>
+            <h2 className={styles.contactIcons}><a href="mailto:yannick@pferr.de"><FaEnvelope /></a><a href="https://www.linkedin.com/in/yannick-pferr-22216619a/"><FaLinkedin /></a><a href="https://github.com/YannickPferr"><FaGithub /></a><a href={data.resume.publicURL}><FaFilePdf /></a></h2>
+            <Link to="aboutme" smooth={true} offset={-60}><button>Learn more</button></Link>
           </header>
         </div>
 
@@ -64,16 +65,58 @@ const IndexPage = () => {
             </div>
           </section>
 
+          {/* EXPERIENCE  */}
+          <section id="experience" className={styles.experience}>
+            <h1>Experience</h1>
+            <div className={styles.flex}>
+              <div className={styles.verticalCenter}>
+                <div className={styles.experienceContainer}>
+                  <h2>2018 – present</h2>
+                  <h3>Working Student (Developer) at Arlanis Reply AG</h3>
+                  <ul>
+                    <li>
+                      Built a cross-cloud synchronization program, that syncs data between Salesforce Marketing Cloud and Sales Cloud
+                  </li>
+                    <li>
+                      Developed a web application with login &amp; session management
+                  </li>
+                    <li>
+                      Created an GUI-based app to interact with Salesforce Marketing Cloud API
+                  </li>
+                  </ul>
+                </div>
+              </div>
+              <div className={styles.verticalCenter}>
+                <h2>Skills</h2>
+                <ul className={styles.skills}>
+                  <li>Java</li>
+                  <li>JavaScript</li>
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>C/C++</li>
+                  <li>HTML/CSS</li>
+                  <li>Gatsby.js</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
           {/* PROJECTS */}
           <section id="projects" className={styles.projects}>
             <div className={styles.projectsRow}>
               <h1>Projects</h1>
               <div className={styles.flex}>
                 <div className={styles.projectsColumn}>
-                  <h1>Gorillas Game</h1>
+                  <h1>Food Blog: The Filling Food Spot</h1>
                   <p>
-                    Gorillas Game implemented in Java
-            </p>
+                    Created a food blog using Gatsby.js and React. The blog is hosted on Netlify and uses Contentful CMS to serve its contents.
+                  </p>
+                  <div className={styles.githubLink}>
+                    <a href="https://fillingfoodspot.com"><button>Live Demo</button></a>
+                    <a className={styles.contactIcons} href="https://github.com/YannickPferr/blog"><FaGithub /></a>
+                  </div>
                 </div>
                 <div className={styles.projectsColumn}>
                   <img
@@ -84,14 +127,72 @@ const IndexPage = () => {
             <div className={styles.projectsRow}>
               <div className={styles.flex}>
                 <div className={styles.projectsColumn}>
-                  <h1>Tetris Game</h1>
+                  <h1>Blockchain System Explorer</h1>
                   <p>
-                    Tetris Game implemented in Java.
+                    Developed an app for researchers that can monitor &amp; analyze the status of a blockchain
+                    platform using a client/server approach. The app is implemented in Java and follows an adapter-based approach.
+                    This means it can support any blockchain platform. The explorer can also collect data about the system the blockchain node is running on.
+                    The collected data can be viewed and queried through a web interface. It was implemented in Java and uses InfluxDB, Influx Chronograf and Influx Telegraf.
+                  </p>
+                  <div className={styles.githubLink}>
+                    <a className={styles.contactIcons} href="https://github.com/YannickPferr/BlockchainSystemExplorer"><FaGithub /></a>
+                  </div>
+                </div>
+                <div className={styles.projectsColumn}>
+                  <img
+                    src="https://raw.githubusercontent.com/YannickPferr/BlockchainSystemExplorer/main/blockchainSystemExplorer.png"></img>
+                </div>
+              </div>
+            </div>
+            <div className={styles.projectsRow}>
+              <div className={styles.flex}>
+                <div className={styles.projectsColumn}>
+                  <h1>News Sentiment Analyzer</h1>
+                  <p>
+                    Buil a web app with a team of students that searches news for specific keywords, extracts the sentiment from the articles
+                    and then visualizes the data in a web interface. A lambda architecture was used to be able to handle big data.
+                    The app uses Java, JavaScript, Node.js, MongoDB, Apache Kafka, Solr and Redis.
+                  </p>
+                  <div className={styles.githubLink}>
+                    <a className={styles.contactIcons} href="https://github.com/YannickPferr/TUDITPM"><FaGithub /></a>
+                  </div>
+                </div>
+                <div className={styles.projectsColumn}>
+                  <img
+                    src="https://raw.githubusercontent.com/YannickPferr/TUDITPM/master/tuditpm.png"></img>
+                </div>
+              </div>
+            </div>
+            <div className={styles.projectsRow}>
+              <div className={styles.flex}>
+                <div className={styles.projectsColumn}>
+                  <h1>Gorillas Game</h1>
+                  <p>
+                    Gorillas game implemented in Java.
+                  </p>
+                  <div className={styles.githubLink}>
+                    <a className={styles.contactIcons} href="https://github.com/YannickPferr/Gorillas"><FaGithub /></a>
+                  </div>
+                </div>
+                <div className={styles.projectsColumn}>
+                  <img
+                    src="https://raw.githubusercontent.com/YannickPferr/Gorillas/main/gorillas.JPG"></img>
+                </div>
+              </div>
+            </div>
+            <div className={styles.projectsRow}>
+              <div className={styles.flex}>
+                <div className={styles.projectsColumn}>
+                  <h1>Magic Mirror</h1>
+                  <p>
+                    Built a smart mirror with a rasperry pi that could display various information.
+                    I used an open-source library based on Node.js and expanded its functionality based on my needs.
+                    I implemented the feature to play YouTube videos and Spotify tracks and added voice control with Google STT API.
                   </p>
                 </div>
                 <div className={styles.projectsColumn}>
                   <img
-                    src="https://raw.githubusercontent.com/YannickPferr/Tetris/main/tetris.JPG"></img>
+                    src="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/8/2/Magic_Mirror-02.jpg"></img>
                 </div>
               </div>
             </div>
@@ -104,7 +205,7 @@ const IndexPage = () => {
           <ContactForm />
         </div>
         <footer className={styles.footer}>
-          <div className={styles.contactIcons}><a href="mailto:yannick@pferr.de"><FaEnvelope /></a><a href="https://www.linkedin.com/in/yannick-pferr-22216619a/"><FaLinkedin /></a><a href="https://github.com/YannickPferr"><FaGithub /></a></div>
+          <div className={styles.contactIcons}><a href="mailto:yannick@pferr.de"><FaEnvelope /></a><a href="https://www.linkedin.com/in/yannick-pferr-22216619a/"><FaLinkedin /></a><a href="https://github.com/YannickPferr"><FaGithub /></a><a href={data.resume.publicURL}><FaFilePdf /></a></div>
           <hr></hr>
           <p>2020 © Yannick Pferr</p>
         </footer>
