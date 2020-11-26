@@ -8,10 +8,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
-}
-
 .vertical-center {
   display: flex;
   flex-direction: column;
@@ -104,8 +100,8 @@ img {
 .about-column {
   flex: 1 1 48%;
   margin: 1%;
-  min-height: 0;
   overflow: hidden;
+  width: 100%;
 
   @media screen and(min-width: 60em) {
     flex-direction: row;
@@ -196,8 +192,8 @@ img {
   flex: 1 1 48%;
   margin: 1%;
   text-align: center;
-  min-height: 0;
   overflow: hidden;
+  width: 100%;
 
   @media screen and(min-width: 60em) {
     text-align: left;

@@ -2,8 +2,6 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import { GrMenu } from "react-icons/gr";
-
 import {Link} from 'react-scroll'
 
 import styles from "./header.module.scss"

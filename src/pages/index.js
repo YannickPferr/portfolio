@@ -15,8 +15,51 @@ const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query{
       profilePic: file(name: {eq: "profilePic"}) {
-        name
-        publicURL
+        childImageSharp {
+          fluid(maxWidth: 1000, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      foodBlogPic: file(name: {eq: "foodBlogPic"}) {
+        childImageSharp {
+          fluid(maxWidth: 1000, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      blockchainExplorerPic: file(name: {eq: "blockchainExplorerPic"}) {
+        childImageSharp {
+          fluid(maxWidth: 1000, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      tuditpmPic: file(name: {eq: "tuditpmPic"}) {
+        childImageSharp {
+          fluid(maxWidth: 1000, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      gorillasPic: file(name: {eq: "gorillasPic"}) {
+        childImageSharp {
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      magicMirrorPic: file(name: {eq: "magicMirrorPic"}) {
+        childImageSharp {
+          fluid(maxWidth: 1000, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
 
       resume: file(name: {eq: "resume"}) {
@@ -33,7 +76,7 @@ const IndexPage = () => {
           <header id="home" className={styles.header}>
             <h1>Yannick Pferr</h1>
             <h2>Business &amp; Information Systems Student</h2>
-            <h2 className={styles.contactIcons}><a href="mailto:yannick@pferr.de"><FaEnvelope /></a><a href="https://www.linkedin.com/in/yannick-pferr-22216619a/"><FaLinkedin /></a><a href="https://github.com/YannickPferr"><FaGithub /></a><a href={data.resume.publicURL}><FaFilePdf /></a></h2>
+            <h2 className={styles.contactIcons}><a aria-label="mail" href="mailto:yannick@pferr.de"><FaEnvelope /></a><a aria-label="linkedin" href="https://www.linkedin.com/in/yannick-pferr-22216619a/"><FaLinkedin /></a><a aria-label="github" href="https://github.com/YannickPferr"><FaGithub /></a><a aria-label="pdf" href={data.resume.publicURL}><FaFilePdf /></a></h2>
             <Link to="aboutme" smooth={true} offset={-60}><button>Learn more</button></Link>
           </header>
         </div>
@@ -44,7 +87,7 @@ const IndexPage = () => {
             <h1>About Me</h1>
             <div className={styles.flex}>
               <div className={styles.aboutColumn}>
-                <img src={data.profilePic.publicURL} />
+                <Image fluid={data.profilePic.childImageSharp.fluid} />
               </div>
               <div className={styles.aboutColumn}>
                 <h2>Welcome to my page!</h2>
@@ -60,7 +103,7 @@ const IndexPage = () => {
                   <br />
                 If you want to get in touch, you can message me on LinkedIn, send me an email or simply use my contact form!
               </p>
-                <a href={data.resume.publicURL}><button>Resume</button></a>
+                <a aria-label="resume" href={data.resume.publicURL}><button>Resume</button></a>
               </div>
             </div>
           </section>
@@ -115,12 +158,12 @@ const IndexPage = () => {
                   </p>
                   <div className={styles.githubLink}>
                     <a href="https://fillingfoodspot.com"><button>Live Demo</button></a>
-                    <a className={styles.contactIcons} href="https://github.com/YannickPferr/blog"><FaGithub /></a>
+                    <a aria-label="github" className={styles.contactIcons} href="https://github.com/YannickPferr/blog"><FaGithub /></a>
                   </div>
                 </div>
                 <div className={styles.projectsColumn}>
-                  <img
-                    src="https://raw.githubusercontent.com/YannickPferr/blog/main/fillingFoodSpot.png"></img>
+                  <Image
+                    fluid={data.foodBlogPic.childImageSharp.fluid} />
                 </div>
               </div>
             </div>
@@ -135,12 +178,12 @@ const IndexPage = () => {
                     The collected data can be viewed and queried through a web interface. It was implemented in Java and uses InfluxDB, Influx Chronograf and Influx Telegraf.
                   </p>
                   <div className={styles.githubLink}>
-                    <a className={styles.contactIcons} href="https://github.com/YannickPferr/BlockchainSystemExplorer"><FaGithub /></a>
+                    <a aria-label="github" className={styles.contactIcons} href="https://github.com/YannickPferr/BlockchainSystemExplorer"><FaGithub /></a>
                   </div>
                 </div>
                 <div className={styles.projectsColumn}>
-                  <img
-                    src="https://raw.githubusercontent.com/YannickPferr/BlockchainSystemExplorer/main/blockchainSystemExplorer.png"></img>
+                  <Image
+                    fluid={data.blockchainExplorerPic.childImageSharp.fluid} />
                 </div>
               </div>
             </div>
@@ -154,12 +197,11 @@ const IndexPage = () => {
                     The app uses Java, JavaScript, Node.js, MongoDB, Apache Kafka, Solr and Redis.
                   </p>
                   <div className={styles.githubLink}>
-                    <a className={styles.contactIcons} href="https://github.com/YannickPferr/TUDITPM"><FaGithub /></a>
+                    <a aria-label="github" className={styles.contactIcons} href="https://github.com/YannickPferr/TUDITPM"><FaGithub /></a>
                   </div>
                 </div>
                 <div className={styles.projectsColumn}>
-                  <img
-                    src="https://raw.githubusercontent.com/YannickPferr/TUDITPM/master/tuditpm.png"></img>
+                  <Image fluid={data.tuditpmPic.childImageSharp.fluid}/>
                 </div>
               </div>
             </div>
@@ -171,12 +213,11 @@ const IndexPage = () => {
                     Gorillas game implemented in Java.
                   </p>
                   <div className={styles.githubLink}>
-                    <a className={styles.contactIcons} href="https://github.com/YannickPferr/Gorillas"><FaGithub /></a>
+                    <a aria-label="github" className={styles.contactIcons} href="https://github.com/YannickPferr/Gorillas"><FaGithub /></a>
                   </div>
                 </div>
                 <div className={styles.projectsColumn}>
-                  <img
-                    src="https://raw.githubusercontent.com/YannickPferr/Gorillas/main/gorillas.JPG"></img>
+                  <Image fluid={data.gorillasPic.childImageSharp.fluid}/>
                 </div>
               </div>
             </div>
@@ -191,24 +232,23 @@ const IndexPage = () => {
                   </p>
                 </div>
                 <div className={styles.projectsColumn}>
-                  <img
-                    src="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/8/2/Magic_Mirror-02.jpg"></img>
+                  <Image fluid={data.magicMirrorPic.childImageSharp.fluid}/>
+                </div>
                 </div>
               </div>
-            </div>
           </section>
-        </section>
+          </section>
 
 
-        <div id="contact" className={styles.contact}>
-          <h1>Contact</h1>
-          <ContactForm />
-        </div>
-        <footer className={styles.footer}>
-          <div className={styles.contactIcons}><a href="mailto:yannick@pferr.de"><FaEnvelope /></a><a href="https://www.linkedin.com/in/yannick-pferr-22216619a/"><FaLinkedin /></a><a href="https://github.com/YannickPferr"><FaGithub /></a><a href={data.resume.publicURL}><FaFilePdf /></a></div>
-          <hr></hr>
-          <p>2020 © Yannick Pferr</p>
-        </footer>
+          <div id="contact" className={styles.contact}>
+            <h1>Contact</h1>
+            <ContactForm />
+          </div>
+          <footer className={styles.footer}>
+          <div className={styles.contactIcons}><a aria-label="mail" href="mailto:yannick@pferr.de"><FaEnvelope /></a><a aria-label="linkedin" href="https://www.linkedin.com/in/yannick-pferr-22216619a/"><FaLinkedin /></a><a aria-label="github" href="https://github.com/YannickPferr"><FaGithub /></a><a aria-label="pdf" href={data.resume.publicURL}><FaFilePdf /></a></div>
+            <hr></hr>
+            <p>2020 © Yannick Pferr</p>
+          </footer>
       </div>
 
     </Layout>
