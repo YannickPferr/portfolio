@@ -16,7 +16,7 @@ const IndexPage = () => {
     query{
       profilePic: file(name: {eq: "profilePic"}) {
         childImageSharp {
-          fluid(maxWidth: 1000, quality: 100) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -24,7 +24,7 @@ const IndexPage = () => {
 
       foodBlogPic: file(name: {eq: "foodBlogPic"}) {
         childImageSharp {
-          fluid(maxWidth: 1000, quality: 100) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -32,7 +32,7 @@ const IndexPage = () => {
 
       blockchainExplorerPic: file(name: {eq: "blockchainExplorerPic"}) {
         childImageSharp {
-          fluid(maxWidth: 1000, quality: 100) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -40,7 +40,7 @@ const IndexPage = () => {
 
       tuditpmPic: file(name: {eq: "tuditpmPic"}) {
         childImageSharp {
-          fluid(maxWidth: 1000, quality: 100) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -48,7 +48,7 @@ const IndexPage = () => {
 
       gorillasPic: file(name: {eq: "gorillasPic"}) {
         childImageSharp {
-          fluid(maxWidth: 800, quality: 100) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -56,7 +56,7 @@ const IndexPage = () => {
 
       magicMirrorPic: file(name: {eq: "magicMirrorPic"}) {
         childImageSharp {
-          fluid(maxWidth: 1000, quality: 100) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
