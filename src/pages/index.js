@@ -118,13 +118,14 @@ const IndexPage = () => {
                   <h3>Working Student (Developer) at Arlanis Reply AG</h3>
                   <ul>
                     <li>
-                      Built a cross-cloud synchronization program, that syncs data between Salesforce Marketing Cloud and Sales Cloud
+                      Built a Java app on Heroku, that syncs data between Salesforce Marketing Cloud and Sales Cloud.
+                      The app was able to efficiently transfer millions of data rows without reaching API and Heroku limits.
                   </li>
                     <li>
-                      Developed a web application with login &amp; session management
+                      Developed a secure web application with login &amp; session management that enabled users to segment audiences without needing to use SQL queries.
                   </li>
                     <li>
-                      Created an GUI-based app to interact with Salesforce Marketing Cloud API
+                      Created a GUI-based app to help users with no coding experience leverage Salesforce Marketing Cloud API functionality, thus reducing setup and configuration times drastically.
                   </li>
                   </ul>
                 </div>
@@ -134,12 +135,15 @@ const IndexPage = () => {
                 <ul className={styles.skills}>
                   <li>Java</li>
                   <li>JavaScript</li>
-                  <li>Python</li>
                   <li>SQL</li>
-                  <li>C/C++</li>
                   <li>HTML/CSS</li>
+                  <li>Python</li>
+                  <li>R</li>
+                  <li>C/C++</li>
+                  <li>MySQL</li>
+                  <li>MongoDB</li>
+                  <li>Git</li>
                   <li>Gatsby.js</li>
-                  <li>React</li>
                   <li>Node.js</li>
                 </ul>
               </div>
@@ -225,8 +229,8 @@ const IndexPage = () => {
                 <div className={styles.projectsColumn}>
                   <h1>Magic Mirror</h1>
                   <p>
-                    Built a smart mirror with a Raspberry Pi that could display various information. 
-                    The backend was built upon a Node.js open-source library. 
+                    Built a smart mirror with a Raspberry Pi that could display various information.
+                    The backend was built upon a Node.js open-source library.
                     Other than the basic features of the library, the mirror could play YouTube videos and Spotify tracks, and also be control through voice using Google STT.
                   </p>
                 </div>
