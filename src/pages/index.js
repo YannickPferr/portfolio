@@ -76,7 +76,7 @@ const IndexPage = () => {
           <header id="home" className={styles.header}>
             <h1>Yannick Pferr</h1>
             <h2>Business &amp; Information Systems Student</h2>
-            <h2 className={styles.contactIcons}><a aria-label="mail" href="mailto:yannick@pferr.de"><FaEnvelope /></a><a aria-label="linkedin" href="https://www.linkedin.com/in/yannick-pferr-22216619a/"><FaLinkedin /></a><a aria-label="github" href="https://github.com/YannickPferr"><FaGithub /></a><a aria-label="pdf" href={data.resume.publicURL}><FaFilePdf /></a></h2>
+            <h2 className={styles.contactIcons}><a aria-label="mail" href="mailto:yannick@pferr.de"><FaEnvelope /></a><a aria-label="linkedin" href="https://www.linkedin.com/in/YannickPferr/"><FaLinkedin /></a><a aria-label="github" href="https://github.com/YannickPferr"><FaGithub /></a><a aria-label="pdf" href={data.resume.publicURL}><FaFilePdf /></a></h2>
             <Link to="aboutme" smooth={true} offset={-60}><button>Learn more</button></Link>
           </header>
         </div>
@@ -154,7 +154,7 @@ const IndexPage = () => {
                 <div className={styles.projectsColumn}>
                   <h1>Food Blog: The Filling Food Spot</h1>
                   <p>
-                    Created a food blog using Gatsby.js and React. The blog is hosted on Netlify and uses Contentful CMS to serve its contents.
+                    Created a food blog to share healthy recipes using Gatsby.js and React. The blog is hosted on Netlify and uses Contentful CMS to serve its content.
                   </p>
                   <div className={styles.githubLink}>
                     <a href="https://fillingfoodspot.com"><button>Live Demo</button></a>
@@ -172,10 +172,9 @@ const IndexPage = () => {
                 <div className={styles.projectsColumn}>
                   <h1>Blockchain System Explorer</h1>
                   <p>
-                    Developed an app for researchers that can monitor &amp; analyze the status of a blockchain
-                    platform using a client/server approach. The app is implemented in Java and follows an adapter-based approach.
-                    This means it can support any blockchain platform. The explorer can also collect data about the system the blockchain node is running on.
-                    The collected data can be viewed and queried through a web interface. It was implemented in Java and uses InfluxDB, Influx Chronograf and Influx Telegraf.
+                    Developed a Java app for researchers that can monitor &amp; analyze the status of any blockchain platform using a client/server approach.
+                    The collected data can be viewed and queried through a web interface. The data is stored in InfluxDB and visualized with Influx Chronograf.
+                    System metrics of blockchain nodes can also be collected with the help of Influx Telegraf.
                   </p>
                   <div className={styles.githubLink}>
                     <a aria-label="github" className={styles.contactIcons} href="https://github.com/YannickPferr/BlockchainSystemExplorer"><FaGithub /></a>
@@ -192,16 +191,15 @@ const IndexPage = () => {
                 <div className={styles.projectsColumn}>
                   <h1>News Sentiment Analyzer</h1>
                   <p>
-                    Buil a web app with a team of students that searches news for specific keywords, extracts the sentiment from the articles
-                    and then visualizes the data in a web interface. A lambda architecture was used to be able to handle big data.
-                    The app uses Java, JavaScript, Node.js, MongoDB, Apache Kafka, Solr and Redis.
+                    Built a web app with a team of students that searches for specific keywords in news articles, and then analyzes the sentiment of the text.
+                    The app uses Java, Apache Kafka and MongoDB to collect the data, Solr to analyze the text, and Redis and Node.js to visualize the data in a web interface.
                   </p>
                   <div className={styles.githubLink}>
                     <a aria-label="github" className={styles.contactIcons} href="https://github.com/YannickPferr/TUDITPM"><FaGithub /></a>
                   </div>
                 </div>
                 <div className={styles.projectsColumn}>
-                  <Image fluid={data.tuditpmPic.childImageSharp.fluid}/>
+                  <Image fluid={data.tuditpmPic.childImageSharp.fluid} />
                 </div>
               </div>
             </div>
@@ -210,14 +208,15 @@ const IndexPage = () => {
                 <div className={styles.projectsColumn}>
                   <h1>Gorillas Game</h1>
                   <p>
-                    Gorillas game implemented in Java.
+                    Implemented the Gorillas game from the 90s in Java with a team of students.
+                    The game featured multiple maps, a high score table, configurable properties, and basic animations.
                   </p>
                   <div className={styles.githubLink}>
                     <a aria-label="github" className={styles.contactIcons} href="https://github.com/YannickPferr/Gorillas"><FaGithub /></a>
                   </div>
                 </div>
                 <div className={styles.projectsColumn}>
-                  <Image fluid={data.gorillasPic.childImageSharp.fluid}/>
+                  <Image fluid={data.gorillasPic.childImageSharp.fluid} />
                 </div>
               </div>
             </div>
@@ -226,29 +225,28 @@ const IndexPage = () => {
                 <div className={styles.projectsColumn}>
                   <h1>Magic Mirror</h1>
                   <p>
-                    Built a smart mirror with a rasperry pi that could display various information.
-                    I used an open-source library based on Node.js and expanded its functionality based on my needs.
-                    I implemented the feature to play YouTube videos and Spotify tracks and added voice control with Google STT API.
+                    Built a smart mirror with a Raspberry Pi that could display various information. 
+                    The backend was built upon a Node.js open-source library. 
+                    Other than the basic features of the library, the mirror could play YouTube videos and Spotify tracks, and also be control through voice using Google STT.
                   </p>
                 </div>
                 <div className={styles.projectsColumn}>
-                  <Image fluid={data.magicMirrorPic.childImageSharp.fluid}/>
-                </div>
+                  <Image fluid={data.magicMirrorPic.childImageSharp.fluid} />
                 </div>
               </div>
+            </div>
           </section>
-          </section>
+        </section>
 
-
-          <div id="contact" className={styles.contact}>
-            <h1>Contact</h1>
-            <ContactForm />
-          </div>
-          <footer className={styles.footer}>
-          <div className={styles.contactIcons}><a aria-label="mail" href="mailto:yannick@pferr.de"><FaEnvelope /></a><a aria-label="linkedin" href="https://www.linkedin.com/in/yannick-pferr-22216619a/"><FaLinkedin /></a><a aria-label="github" href="https://github.com/YannickPferr"><FaGithub /></a><a aria-label="pdf" href={data.resume.publicURL}><FaFilePdf /></a></div>
-            <hr></hr>
-            <p>2020 © Yannick Pferr</p>
-          </footer>
+        <div id="contact" className={styles.contact}>
+          <h1>Contact</h1>
+          <ContactForm />
+        </div>
+        <footer className={styles.footer}>
+          <div className={styles.contactIcons}><a aria-label="mail" href="mailto:yannick@pferr.de"><FaEnvelope /></a><a aria-label="linkedin" href="https://www.linkedin.com/in/YannickPferr/"><FaLinkedin /></a><a aria-label="github" href="https://github.com/YannickPferr"><FaGithub /></a><a aria-label="pdf" href={data.resume.publicURL}><FaFilePdf /></a></div>
+          <hr></hr>
+          <p>2020 © Yannick Pferr</p>
+        </footer>
       </div>
 
     </Layout>
