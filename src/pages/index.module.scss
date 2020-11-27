@@ -136,8 +136,19 @@ a {
 }
 
 .experience-container {
+  @extend .vertical-center;
+
   @media screen and(min-width: 60em) {
+    margin-right: 1em;
     text-align: left;
+  }
+}
+
+.skills-container {
+  @extend .vertical-center;
+
+  @media screen and(min-width: 60em) {
+    margin-left: 1em;
   }
 }
 
@@ -216,7 +227,7 @@ a {
   cursor: pointer;
 }
 
-.github-link{
+.github-link {
   @extend .vertical-center;
 
   flex-direction: row;

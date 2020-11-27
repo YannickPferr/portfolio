@@ -112,25 +112,24 @@ const IndexPage = () => {
           <section id="experience" className={styles.experience}>
             <h1>Experience</h1>
             <div className={styles.flex}>
-              <div className={styles.verticalCenter}>
-                <div className={styles.experienceContainer}>
-                  <h2>2018 – present</h2>
-                  <h3>Working Student (Developer) at Arlanis Reply AG</h3>
-                  <ul>
-                    <li>
-                      Built a Java app on Heroku, that syncs data between Salesforce Marketing Cloud and Sales Cloud.
-                      The app was able to efficiently transfer millions of data rows without reaching API and Heroku limits.
+              <div className={styles.experienceContainer}>
+                <h2>2018 – present</h2>
+                <h3>Working Student (Developer) at Arlanis Reply AG</h3>
+                <ul>
+                  <li>
+                    Built a Java app on Heroku, that syncs data between Salesforce Marketing Cloud and Sales Cloud.
+                    The app was able to efficiently transfer millions of data rows without reaching API and Heroku limits.
                   </li>
-                    <li>
-                      Developed a secure web application with login &amp; session management that enabled users to segment audiences without needing to use SQL queries.
+                  <li>
+                    Developed a secure web application with login &amp; session management that enabled users to segment audiences without needing to use SQL queries.
                   </li>
-                    <li>
-                      Created a GUI-based app to help users with no coding experience leverage Salesforce Marketing Cloud API functionality, thus reducing setup and configuration times drastically.
+                  <li>
+                    Created a GUI-based app to help users with no coding experience leverage Salesforce Marketing Cloud API functionality, thus reducing setup and configuration times drastically.
                   </li>
-                  </ul>
-                </div>
+                </ul>
               </div>
-              <div className={styles.verticalCenter}>
+
+              <div className={styles.skillsContainer}>
                 <h2>Skills</h2>
                 <ul className={styles.skills}>
                   <li>Java</li>
