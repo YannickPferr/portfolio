@@ -75,7 +75,7 @@ const IndexPage = () => {
         <div>
           <header id="home" className={styles.header}>
             <h1>Yannick Pferr</h1>
-            <h2>Business &amp; Information Systems Student</h2>
+            <h2>M.Sc. Business &amp; Information Systems Student</h2>
             <h2 className={styles.contactIcons}><a aria-label="mail" href="mailto:yannick@pferr.de"><FaEnvelope /></a><a aria-label="linkedin" href="https://www.linkedin.com/in/YannickPferr/"><FaLinkedin /></a><a aria-label="github" href="https://github.com/YannickPferr"><FaGithub /></a><a aria-label="pdf" href={data.resume.publicURL}><FaFilePdf /></a></h2>
             <Link to="aboutme" smooth={true} offset={-60}><button>Learn more</button></Link>
           </header>
@@ -102,6 +102,9 @@ const IndexPage = () => {
                 <br />
                   <br />
                 If you want to get in touch, you can message me on LinkedIn, send me an email or simply use my contact form!
+                <br/>
+                <br/>
+                Looking for my resume? Look no further! Click the button below! 
               </p>
                 <a aria-label="resume" href={data.resume.publicURL}><button>Resume</button></a>
               </div>
@@ -114,7 +117,7 @@ const IndexPage = () => {
             <div className={styles.flex}>
               <div className={styles.experienceContainer}>
                 <h2>2018 – present</h2>
-                <h3>Working Student (Developer) at Arlanis Reply AG</h3>
+                <h3>Developer &amp; Salesforce Consultant (working student) at Arlanis Reply AG</h3>
                 <ul>
                   <li>
                     Built a Java app on Heroku, that syncs data between Salesforce Marketing Cloud and Sales Cloud.
