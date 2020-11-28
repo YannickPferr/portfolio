@@ -108,6 +108,13 @@ a {
   }
 }
 
+.about-column:first-child {
+  margin-bottom: 1em;
+  @media screen and(min-width: 60em) {
+    margin-bottom: 1%; 
+  }
+}
+
 .experience {
   @extend .vertical-center;
 
