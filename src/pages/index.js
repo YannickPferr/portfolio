@@ -158,7 +158,7 @@ const IndexPage = () => {
               <h1>Projects</h1>
               <div className={styles.flex}>
                 <div className={styles.projectsColumn}>
-                  <h1>Food Blog: The Filling Food Spot</h1>
+                  <h2>Food Blog: The Filling Food Spot</h2>
                   <p>
                     Created a food blog to share healthy recipes using Gatsby.js and React. The blog is hosted on Netlify and uses Contentful CMS to serve its content.
                   </p>
@@ -176,7 +176,7 @@ const IndexPage = () => {
             <div className={styles.projectsRow}>
               <div className={styles.flex}>
                 <div className={styles.projectsColumn}>
-                  <h1>Blockchain System Explorer</h1>
+                  <h2>Blockchain System Explorer</h2>
                   <p>
                     Developed a Java app for researchers that can monitor &amp; analyze the status of any blockchain platform using a client/server approach.
                     The collected data can be viewed and queried through a web interface. The data is stored in InfluxDB and visualized with Influx Chronograf.
@@ -195,7 +195,7 @@ const IndexPage = () => {
             <div className={styles.projectsRow}>
               <div className={styles.flex}>
                 <div className={styles.projectsColumn}>
-                  <h1>News Sentiment Analyzer</h1>
+                  <h2>News Sentiment Analyzer</h2>
                   <p>
                     Built a web app with a team of students that searches for specific keywords in news articles, and then analyzes the sentiment of the text.
                     The app uses Java, Apache Kafka and MongoDB to collect the data, Solr to analyze the text, and Redis and Node.js to visualize the data in a web interface.
@@ -212,7 +212,7 @@ const IndexPage = () => {
             <div className={styles.projectsRow}>
               <div className={styles.flex}>
                 <div className={styles.projectsColumn}>
-                  <h1>Gorillas Game</h1>
+                  <h2>Gorillas Game</h2>
                   <p>
                     Implemented the Gorillas game from the 90s in Java with a team of students.
                     The game featured multiple maps, a high score table, configurable properties, and basic animations.
@@ -229,7 +229,7 @@ const IndexPage = () => {
             <div className={styles.projectsRow}>
               <div className={styles.flex}>
                 <div className={styles.projectsColumn}>
-                  <h1>Magic Mirror</h1>
+                  <h2>Magic Mirror</h2>
                   <p>
                     Built a smart mirror with a Raspberry Pi that could display various information.
                     The backend was built upon a Node.js open-source library.
