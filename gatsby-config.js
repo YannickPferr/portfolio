@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Portfolio Yannick Pferr`,
-    description: `Here you can find infos about me, my experience and may recent projects!`,
+    description: `Here you can find infos about me, my experience and my recent projects!`,
     author: `Yannick Pferr`,
   },
   plugins: [
