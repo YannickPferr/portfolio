@@ -7,31 +7,37 @@ const ContactForm = ({ input }) => {
     return (
         <form className={styles.form} action="https://formsubmit.io/send/c59aa336-7221-49a2-8838-2585da01783a" method="post">
             <div>
-                <label htmlFor="name">Your Name</label>
+                <label className={styles.clip} htmlFor="name">Your Name*</label>
                 <input
                     className={styles.formInput}
                     type="text"
                     name="NAME"
                     id="name"
+                    placeholder="Your Name*"
+                    required
                 />
             </div>
             <div>
-                <label htmlFor="email">Your Email Address</label>
+                <label className={styles.clip} htmlFor="email">Your Email Address*</label>
                 <input
                     className={styles.formInput}
                     name="EMAIL"
                     id="email"
                     type="email"
+                    placeholder="Your Email Address*"
+                    required
                 />
             </div>
             <div>
-                <label htmlFor="message">Your Message</label>
+                <label className={styles.clip} htmlFor="message">Your Message*</label>
                 <textarea
                     className={styles.formInput}
                     name="MESSAGE"
                     id="message"
                     type="text"
+                    placeholder="Your Message*"
                     rows="5"
+                    required
                 />
             </div>
             <input
