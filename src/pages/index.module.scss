@@ -157,8 +157,9 @@ hr{
   @extend .vertical-center;
   width: 100%;
   border-bottom: thin solid;
-  margin: auto 1em;
+  margin: 0 1em;
   margin-top: 1em;
+  padding: 1em 0;
 
   @media screen and(min-width: 60em) {
     text-align: left;
@@ -177,7 +178,9 @@ hr{
 
 .skills-container {
   @extend .vertical-center;
+  margin: 0 1em;
   margin-top: 1em;
+  padding: 1em 0;
 }
 
 .skills {
@@ -205,7 +208,8 @@ hr{
   @extend .vertical-center;
 
   position: relative;
-  margin: auto 1em;
+  margin: 0 1em;
+  padding: 1em 0;
   min-height: calc(50vh - 60px);
   border-bottom: thin groove;
 
