@@ -9,7 +9,11 @@ p,ul,ol{
 
 a {
   color: inherit;
-  text-decoration: none;
+}
+
+hr{
+  width: 95%;
+  margin: 1em auto;
 }
 
 .vertical-center {
@@ -143,23 +147,37 @@ a {
   @media screen and(min-width: 60em) {
     flex-direction: column;
   }
+
+  .flex {
+    flex-direction: column;
+  }
 }
 
 .experience-container {
   @extend .vertical-center;
+  width: 100%;
+  border-bottom: thin solid;
+  margin: auto 1em;
+  margin-top: 1em;
 
   @media screen and(min-width: 60em) {
-    margin-right: 1em;
     text-align: left;
+  }
+}
+
+.experience-header{
+  display: flex;
+  flex-direction: column;
+
+  @media screen and(min-width: 60em) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .skills-container {
   @extend .vertical-center;
-
-  @media screen and(min-width: 60em) {
-    margin-left: 1em;
-  }
+  margin-top: 1em;
 }
 
 .skills {
@@ -180,22 +198,20 @@ a {
   text-align: center;
   position: relative;
   margin: 0 auto;
+  padding: 1em;
 }
 
 .projects-row {
   @extend .vertical-center;
 
   position: relative;
-  padding: 1em;
+  margin: auto 1em;
   min-height: calc(50vh - 60px);
-  color: white;
-  background: #00b4db; /* fallback for old browsers */
-  background: -webkit-linear-gradient(135deg, #0083b0, #00b4db); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    135deg,
-    #0083b0,
-    #00b4db
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-bottom: thin groove;
+
+  .flex {
+    padding: 1em 0;
+  }
 }
 
 .projects-row:nth-child(odd) {
@@ -209,6 +225,10 @@ a {
   }
 }
 
+.projects-row:nth-last-child(1){
+  border-bottom: none;
+}
+
 .projects-column {
   flex: 1 1 48%;
   margin: 1%;
@@ -219,6 +239,10 @@ a {
   @media screen and(min-width: 60em) {
     text-align: left;
   }
+}
+
+.projects-column h2 {
+  margin-top: 0;
 }
 
 .projects-column button {

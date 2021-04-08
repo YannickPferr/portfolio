@@ -76,6 +76,7 @@ const IndexPage = () => {
           <header id="home" className={styles.header}>
             <h1>Yannick Pferr</h1>
             <h2>M.Sc. Business &amp; Information Systems Student</h2>
+            {console.log(data.resume)}
             <h2 className={styles.contactIcons}><a aria-label="mail" href="mailto:yannick@pferr.de"><FaEnvelope /></a><a aria-label="linkedin" href="https://www.linkedin.com/in/YannickPferr/"><FaLinkedin /></a><a aria-label="github" href="https://github.com/YannickPferr"><FaGithub /></a><a aria-label="pdf" href={data.resume.publicURL}><FaFilePdf /></a></h2>
             <Link to="aboutme" smooth={true} offset={-60}><button>Learn more</button></Link>
           </header>
@@ -98,7 +99,7 @@ const IndexPage = () => {
                 <br />
                   <br />
                 Other than tech, I really like working out, cooking and coming up with new healthy recipes
-                (I have a food blog where I share my recipes if you want to check it out).
+                (check out my food blog <a href="https://www.fillingfoodspot.com">here</a>).
                 <br />
                   <br />
                 If you want to get in touch, you can message me on LinkedIn, send me an email or simply use my contact form!
@@ -115,38 +116,74 @@ const IndexPage = () => {
           <section id="experience" className={styles.experience}>
             <h1>Experience</h1>
             <div className={styles.flex}>
-              <div className={styles.experienceContainer}>
-                <h2>2018 – present</h2>
-                <h3>Developer &amp; Salesforce Consultant (working student) at Arlanis Reply AG</h3>
+            <div className={styles.experienceContainer}>
+                <div className={styles.experienceHeader}> 
+                  <h2>Bosch Rexroth AG</h2>
+                  <h2>January 2021 – July 2021</h2>
+                </div>
+                <h3>Master thesis: Machine Learning for Production Optimization</h3>
                 <ul>
                   <li>
-                    Built a Java app on Heroku, that syncs data between Salesforce Marketing Cloud and Sales Cloud.
-                    The app was able to efficiently transfer millions of data rows without reaching API and Heroku limits.
+                    Carried out a <strong>data science project</strong> using the <strong>CRISP-DM model</strong>
                   </li>
                   <li>
-                    Developed a secure web application with login &amp; session management that enabled users to segment audiences without needing to use SQL queries.
+                    Built a <strong>machine learning</strong> system for <strong>production planning</strong> with the goal to <strong>optimize production</strong> and <strong>machine setup times</strong>
                   </li>
                   <li>
-                    Created a GUI-based app to help users with no coding experience leverage Salesforce Marketing Cloud API functionality, thus reducing setup and configuration times drastically.
+                    System was built using <strong>supervised learning</strong> and <strong>deep reinforcement learning</strong>
+                  </li>
+                  <li>
+                    The system was implemented in <strong>Python</strong> with <strong>scikit-learn</strong>, <strong>pandas</strong>, <strong>NumPy</strong>, <strong>TensorFlow</strong> and <strong>Keras</strong>
                   </li>
                 </ul>
               </div>
-
+              <div className={styles.experienceContainer}>
+                <div className={styles.experienceHeader}> 
+                  <h2>Arlanis Reply AG</h2>
+                  <h2>January 2018 – July 2021</h2>
+                </div>
+                <h3>Working student: Developer &amp; Consultant</h3>
+                <ul>
+                  <li>
+                    Development of <strong>Java applications</strong> with <strong>Salesforce integration</strong> via <strong>REST</strong> or <strong>SOAP APIs</strong>
+                  </li>
+                  <li>
+                  <strong>Full stack development</strong> with <strong>HTML/CSS</strong> and <strong>JavaScript</strong> (Frontend) and <strong>server-side JavaScript</strong> (Backend)
+                  </li>
+                  <li>
+                    Worked with <strong>SQL queries</strong> to <strong>segment customers</strong> and <strong>produce reports</strong>
+                  </li>
+                  <li>
+                    <strong>Documentation</strong> and <strong>IT-Assessment</strong> of <strong>user stories</strong>
+                  </li>
+                  <li>
+                    <strong>Consulting</strong> and <strong>project work</strong> in an <strong>agile</strong> environment (SCRUM)
+                  </li>
+                </ul>
+              </div>
               <div className={styles.skillsContainer}>
                 <h2>Skills</h2>
                 <ul className={styles.skills}>
                   <li>Java</li>
                   <li>JavaScript</li>
+                  <li>Python</li>
                   <li>SQL</li>
                   <li>HTML/CSS</li>
-                  <li>Python</li>
                   <li>R</li>
                   <li>C/C++</li>
-                  <li>MySQL</li>
-                  <li>MongoDB</li>
+                  <li>TensorFlow</li>
+                  <li>Keras</li>
+                  <li>scikit-learn</li>
                   <li>Git</li>
                   <li>Gatsby.js</li>
                   <li>Node.js</li>
+                  <li>React</li>
+                  <li>Apache Kafka</li>
+                  <li>MS-Office</li>
+                  <li>Atlassian Suite</li>
+                  <li>MySQL</li>
+                  <li>MongoDB</li>
+                  <li>InfluxDB</li>
                 </ul>
               </div>
             </div>
@@ -173,6 +210,7 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
+            
             <div className={styles.projectsRow}>
               <div className={styles.flex}>
                 <div className={styles.projectsColumn}>
@@ -192,6 +230,7 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
+          
             <div className={styles.projectsRow}>
               <div className={styles.flex}>
                 <div className={styles.projectsColumn}>
@@ -209,6 +248,7 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
+            
             <div className={styles.projectsRow}>
               <div className={styles.flex}>
                 <div className={styles.projectsColumn}>
@@ -226,6 +266,7 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
+            
             <div className={styles.projectsRow}>
               <div className={styles.flex}>
                 <div className={styles.projectsColumn}>
