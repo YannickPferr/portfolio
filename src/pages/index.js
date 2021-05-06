@@ -274,7 +274,7 @@ const IndexPage = () => {
                   <p>
                     Built a smart mirror with a Raspberry Pi that could display various information.
                     The backend was built upon a Node.js open-source library.
-                    Other than the basic features of the library, the mirror could play YouTube videos and Spotify tracks, and also be control through voice using Google STT.
+                    Other than the basic features of the library, the mirror could play YouTube videos and Spotify tracks, and also be controlled through voice using Google STT.
                   </p>
                 </div>
                 <div className={styles.projectsColumn}>
