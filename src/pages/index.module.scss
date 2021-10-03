@@ -47,14 +47,14 @@ hr{
   min-height: calc(100vh - 60px);
   padding: 1em;
   text-align: center;
-  color: white;
-  background: #00b4db; /* fallback for old browsers */
-  background: -webkit-linear-gradient(135deg, #0083b0, #00b4db); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
+  color: black;
+  background: #FFB205; /* fallback for old browsers */
+  //background: -webkit-linear-gradient(135deg, #0083b0, #00b4db); /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(
     135deg,
     #0083b0,
     #00b4db
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   h1 {
     margin-bottom: 1rem;
   }
@@ -64,14 +64,14 @@ hr{
   padding: 0.5em 2em 0.5em 2em;
   text-transform: capitalize;
   background-color: transparent;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid black;
+  color: black;
   font-weight: bold;
 }
 
 .header button:hover {
-  background-color: white;
-  color: #0083b0;
+  background-color: black;
+  color: #FFB205;
   cursor: pointer;
 }
 
@@ -135,10 +135,10 @@ hr{
   min-height: calc(100vh - 60px);
   padding: 1em;
   margin: 0 auto;
-  color: white;
-  background: #00b4db; /* fallback for old browsers */
-  background: -webkit-linear-gradient(135deg, #0083b0, #00b4db); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
+  color: black;
+  background: #FFB205; /* fallback for old browsers */
+  //background: -webkit-linear-gradient(135deg, #0083b0, #00b4db); /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(
     135deg,
     #0083b0,
     #00b4db
@@ -212,16 +212,14 @@ hr{
   padding: 1em 0;
   min-height: calc(50vh - 60px);
   border-bottom: thin groove;
+  color: black;
 
   .flex {
     padding: 1em 0;
   }
 }
 
-.projects-row:nth-child(odd) {
-  background: white;
-  color: black;
-
+.projects-row:nth-child(odd) {  
   .flex {
     @media screen and(min-width: 60em) {
       flex-direction: row-reverse;
@@ -282,10 +280,10 @@ hr{
   min-height: calc(80vh - 60px);
   text-align: center;
   padding: 1em;
-  color: white;
-  background: #00b4db; /* fallback for old browsers */
-  background: -webkit-linear-gradient(135deg, #0083b0, #00b4db); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
+  color: black;
+  background: #FFB205; /* fallback for old browsers */
+  //background: -webkit-linear-gradient(135deg, #0083b0, #00b4db); /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(
     135deg,
     #0083b0,
     #00b4db
@@ -305,7 +303,6 @@ hr{
 
 .contactIcons svg:hover {
   transform: scale(1.2);
-  color: #f77500;
 }
 
 .footer {
@@ -314,7 +311,7 @@ hr{
   text-align: center;
   padding: 1em;
   color: white;
-  background: #333;
+  background: black;
 }
 
 .footer hr {

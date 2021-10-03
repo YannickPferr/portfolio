@@ -75,7 +75,7 @@ const IndexPage = () => {
         <div>
           <header id="home" className={styles.header}>
             <h1>Yannick Pferr</h1>
-            <h2>M.Sc. Business &amp; Information Systems Student</h2>
+            <h2>IT-Trainee @ Commerzbank</h2>
             {console.log(data.resume)}
             <h2 className={styles.contactIcons}><a aria-label="mail" href="mailto:yannick@pferr.de"><FaEnvelope /></a><a aria-label="linkedin" href="https://www.linkedin.com/in/YannickPferr/"><FaLinkedin /></a><a aria-label="github" href="https://github.com/YannickPferr"><FaGithub /></a><a aria-label="pdf" href={data.resume.publicURL}><FaFilePdf /></a></h2>
             <Link to="aboutme" smooth={true} offset={-60}><button>Learn more</button></Link>
@@ -93,7 +93,7 @@ const IndexPage = () => {
               <div className={styles.aboutColumn}>
                 <h2>Welcome to my page!</h2>
                 <p>
-                  My name is Yannick Pferr and I am currently pursuing my masters degree in business &amp; information systems at TU Darmstadt.
+                  My name is Yannick Pferr, I have a masters degree in business &amp; information systems from TU Darmstadt and am currently working as a IT-Trainee at Commerzbank.
                   I am passionate about software engineering and technology in general.
                   In my freetime I like working on software projects and messing around with raspberry pi or arduino.
                 <br />
@@ -119,7 +119,7 @@ const IndexPage = () => {
             <div className={styles.experienceContainer}>
                 <div className={styles.experienceHeader}> 
                   <h2>Bosch Rexroth AG</h2>
-                  <h2>January 2021 – July 2021</h2>
+                  <h2>January 2021 – June 2021</h2>
                 </div>
                 <h3>Master thesis: Machine Learning for Production Optimization</h3>
                 <ul>
@@ -140,7 +140,7 @@ const IndexPage = () => {
               <div className={styles.experienceContainer}>
                 <div className={styles.experienceHeader}> 
                   <h2>Arlanis Reply AG</h2>
-                  <h2>January 2018 – July 2021</h2>
+                  <h2>January 2018 – September 2021</h2>
                 </div>
                 <h3>Working student: Developer &amp; Consultant</h3>
                 <ul>
