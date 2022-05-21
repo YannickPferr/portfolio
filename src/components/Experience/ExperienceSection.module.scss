@@ -44,8 +44,14 @@
   margin-top: 1em;
   padding: 1em 0;
 
-  @media screen and(min-width: 60em) {
+  ul {
     text-align: left;
+  }
+
+  h3 {
+    @media screen and(min-width: 60em) {
+      text-align: left;
+    }
   }
 }
 
@@ -56,6 +62,7 @@
   @media screen and(min-width: 60em) {
     flex-direction: row;
     justify-content: space-between;
+    text-align: left;
   }
 }
 

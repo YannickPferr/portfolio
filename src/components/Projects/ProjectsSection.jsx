@@ -21,7 +21,7 @@ const ProjectsSection = ({
     {
       name: "Blockchain System Explorer",
       description:
-        "Developed a Java app for researchers that can monitor &amp; analyze the status of any blockchain platform using a client/server approach. The collected data can be viewed and queried through a web interface. The data is stored in InfluxDB and visualized with Influx Chronograf. System metrics of blockchain nodes can also be collected with the help of Influx Telegraf.",
+        "Developed a Java app for researchers that can monitor & analyze the status of any blockchain platform using a client/server approach. The collected data can be viewed and queried through a web interface. The data is stored in InfluxDB and visualized with Influx Chronograf. System metrics of blockchain nodes can also be collected with the help of Influx Telegraf.",
       demoLink: "",
       githubLink: "https://github.com/YannickPferr/BlockchainSystemExplorer",
       demoPic: blockchainExplorerPic,
@@ -51,8 +51,9 @@ const ProjectsSection = ({
   return (
     <section id="projects" className={styles.projects}>
       <h1>Projects</h1>
-      {projects.map(project => (
+      {projects.map((project, index) => (
         <Project
+          key={index}
           projectName={project.name}
           projectDescription={project.description}
           liveDemoLink={project.demoLink}
