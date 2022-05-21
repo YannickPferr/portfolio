@@ -1,0 +1,102 @@
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+
+  @media screen and(min-width: 60em) {
+    flex-direction: row;
+  }
+}
+
+.contactIcons {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.contactIcons svg {
+  margin-left: 0.125em;
+  margin-right: 0.125em;
+}
+
+.contactIcons svg:hover {
+  transform: scale(1.2);
+  color: #ffe900;
+}
+
+.github-link {
+  @extend .vertical-center;
+
+  flex-direction: row;
+  align-items: center;
+  margin: 1em 0;
+
+  @media screen and(min-width: 60em) {
+    justify-content: left;
+  }
+}
+
+.projects-row {
+  @extend .vertical-center;
+
+  position: relative;
+  margin: 0 1em;
+  padding: 1em 0;
+  min-height: calc(50vh - 60px);
+  border-bottom: thin groove;
+
+  .flex {
+    padding: 1em 0;
+  }
+}
+
+.projects-row:nth-child(odd) {
+  .flex {
+    @media screen and(min-width: 60em) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.projects-row:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.projects-column {
+  flex: 1 1 48%;
+  margin: 1%;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+
+  @media screen and(min-width: 60em) {
+    text-align: left;
+  }
+}
+
+.projects-column h2 {
+  margin-top: 0;
+}
+
+.projects-column button {
+  padding: 0.5em 2em 0.5em 2em;
+  margin-right: 1em;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 2px solid #00414b;
+  font-weight: bold;
+}
+
+.projects-column button:hover {
+  background-color: #00414b;
+  color: white;
+  cursor: pointer;
+}

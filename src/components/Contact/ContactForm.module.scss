@@ -8,7 +8,7 @@
   }
 }
 
-.form div{
+.form div {
   text-align: left;
 }
 
@@ -17,7 +17,7 @@
   width: 100%;
   margin: 0.5em auto;
   padding: 0.5em;
-  border: solid 0.1em black;
+  border: none;
   outline: none;
   resize: none;
   -webkit-appearance: none;
@@ -30,8 +30,8 @@
   padding: 0.5em 2em 0.5em 2em;
   text-transform: capitalize;
   background-color: transparent;
-  border: 2px solid black;
-  color: black;
+  border: 2px solid white;
+  color: white;
   font-weight: bold;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -39,8 +39,8 @@
 }
 
 .form-submit:hover {
-  background-color: black;
-  color: #FFB205;
+  background-color: white;
+  color: #00414b;
   cursor: pointer;
 }
 

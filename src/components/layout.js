@@ -5,23 +5,18 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
 import PropTypes from "prop-types"
-
-import SEO from "../components/seo"
-
-import Header from "./header"
+import React from "react"
+import Header from "./Header/Header"
 import "./layout.css"
+import SEO from "./SEO"
 
 const Layout = ({ title, children }) => {
-
   return (
     <>
       <SEO title={title} />
-      <Header/>
-      <div>
-        {children}
-      </div>
+      <Header />
+      <div>{children}</div>
     </>
   )
 }
