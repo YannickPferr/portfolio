@@ -1,0 +1,35 @@
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-container {
+  @extend .vertical-center;
+  width: 100%;
+  border-bottom: thin solid;
+  margin: 0 1em;
+  margin-top: 1em;
+  padding: 1em 0;
+
+  ul {
+    text-align: left;
+  }
+
+  h3 {
+    @media screen and(min-width: 60em) {
+      text-align: left;
+    }
+  }
+}
+
+.experience-header {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and(min-width: 60em) {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}

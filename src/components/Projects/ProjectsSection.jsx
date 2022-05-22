@@ -52,14 +52,7 @@ const ProjectsSection = ({
     <section id="projects" className={styles.projects}>
       <h1>Projects</h1>
       {projects.map((project, index) => (
-        <Project
-          key={index}
-          projectName={project.name}
-          projectDescription={project.description}
-          liveDemoLink={project.demoLink}
-          githubLink={project.githubLink}
-          demoPic={project.demoPic}
-        ></Project>
+        <Project key={index} project={project}></Project>
       ))}
     </section>
   )

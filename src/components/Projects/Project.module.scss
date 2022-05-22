@@ -89,18 +89,3 @@
 .projects-column p {
   text-align: left;
 }
-
-.projects-column button {
-  padding: 0.5em 2em 0.5em 2em;
-  margin-right: 1em;
-  text-transform: capitalize;
-  background-color: transparent;
-  border: 2px solid #00414b;
-  font-weight: bold;
-}
-
-.projects-column button:hover {
-  background-color: #00414b;
-  color: white;
-  cursor: pointer;
-}

@@ -1,0 +1,12 @@
+.button {
+  padding: 0.5em 2em 0.5em 2em;
+  text-transform: capitalize;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  font-weight: bold;
+}
+
+.button:hover {
+  cursor: pointer;
+}

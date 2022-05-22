@@ -1,5 +1,6 @@
 import Image from "gatsby-image"
 import React from "react"
+import Button from "../Button"
 import styles from "./AboutSection.module.scss"
 
 const AboutSection = ({ image, resume }) => {
@@ -32,9 +33,12 @@ const AboutSection = ({ image, resume }) => {
             <br />
             Looking for my resume? Look no further! Click the button below!
           </p>
-          <a aria-label="resume" href={resume}>
-            <button>Resume</button>
-          </a>
+          <Button
+            text="Resume"
+            href={resume}
+            color="#00414b"
+            backgroundColor="white"
+          ></Button>
         </div>
       </div>
     </section>

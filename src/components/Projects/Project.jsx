@@ -1,32 +1,30 @@
 import Image from "gatsby-image"
 import React from "react"
 import { FaGithub } from "react-icons/fa"
+import Button from "../Button"
 import styles from "./Project.module.scss"
 
-const Project = ({
-  projectName,
-  projectDescription,
-  liveDemoLink,
-  githubLink,
-  demoPic,
-}) => {
+const Project = ({ project }) => {
   return (
     <div className={styles.projectsRow}>
       <div className={styles.flex}>
         <div className={styles.projectsColumn}>
-          <h2>{projectName}</h2>
-          <p>{projectDescription}</p>
+          <h2>{project.name}</h2>
+          <p>{project.description}</p>
           <div className={styles.githubLink}>
-            {liveDemoLink && (
-              <a href={liveDemoLink}>
-                <button>Live Demo</button>
-              </a>
+            {project.demoLink && (
+              <Button
+                text="Live Demo"
+                href={project.demoLink}
+                color="#00414b"
+                backgroundColor="white"
+              ></Button>
             )}
-            {githubLink && (
+            {project.githubLink && (
               <a
                 aria-label="github"
                 className={styles.contactIcons}
-                href={githubLink}
+                href={project.githubLink}
               >
                 <FaGithub />
               </a>
@@ -34,7 +32,7 @@ const Project = ({
           </div>
         </div>
         <div className={styles.projectsColumn}>
-          <Image fluid={demoPic} />
+          <Image fluid={project.demoPic} />
         </div>
       </div>
     </div>
