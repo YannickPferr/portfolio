@@ -12,7 +12,6 @@ const ExperienceSection = () => {
         "Redesigned and rebuilt a supervised machine learning model for the treasury, to classify if customers are going to use their special repayment option of their loan, and boosted the F1-score of the old model by 22% (Python, scikit-learn, pandas)",
         "Developed, tested, and maintained the frontend of a foreign exchange trading app and quickly rose to become one of the top performing devs in a team of 12, while also supporting other juniors (React, TypeScript, Styled Components)",
         "Led a team of five interns/students to help different teams with the deployment of new APIs",
-        "Analyzed results, translated them into business recommendations and presented them to senior management",
         "Implemented new REST API endpoints in the backend of the Commerzbank developer API portal and built a feature in the frontend, that allowed users to see the deployment/staging status of their APIs (React, Java Spring)",
       ],
     },
