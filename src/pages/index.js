@@ -19,47 +19,7 @@ const IndexPage = () => {
         }
       }
 
-      foodBlogPic: file(name: { eq: "foodBlogPic" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      blockchainExplorerPic: file(name: { eq: "blockchainExplorerPic" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      tuditpmPic: file(name: { eq: "tuditpmPic" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      gorillasPic: file(name: { eq: "gorillasPic" }) {
-        childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      magicMirrorPic: file(name: { eq: "magicMirrorPic" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      resume: file(name: { eq: "resume" }) {
+      resume: file(name: { eq: "resume2.0" }) {
         name
         publicURL
       }
@@ -78,15 +38,9 @@ const IndexPage = () => {
         image={data.profilePic.childImageSharp.fluid}
         resume={data.resume.publicURL}
       ></AboutSection>
-      <ExperienceSection></ExperienceSection>
-      <ProjectsSection
-        foodBlogPic={data.foodBlogPic.childImageSharp.fluid}
-        blockchainExplorerPic={data.blockchainExplorerPic.childImageSharp.fluid}
-        tuditpmPic={data.tuditpmPic.childImageSharp.fluid}
-        gorillaPic={data.gorillasPic.childImageSharp.fluid}
-        magicMirrorPic={data.magicMirrorPic.childImageSharp.fluid}
-      ></ProjectsSection>
-      <ContactSection></ContactSection>
+      <ExperienceSection />
+      <ProjectsSection />
+      <ContactSection />
       <Footer resume={data.resume.publicURL}></Footer>
     </Layout>
   )

@@ -14,16 +14,17 @@ const AboutSection = ({ image, resume }) => {
         <div className={styles.aboutColumn}>
           <h2>Welcome to my page!</h2>
           <p>
-            My name is Yannick Pferr, I have a masters degree in business &amp;
+            My name is Yannick Pferr, I have a masters degree in business
             information systems from TU Darmstadt and am currently working as a
-            IT-Trainee at Commerzbank. I am passionate about software
-            engineering and technology in general. In my freetime I like working
-            on software projects and messing around with raspberry pi or
-            arduino.
+            Software Engineer in the IT-Trainee program at Commerzbank. I have 1
+            year of professional software engineering experience and another 4
+            years of experience as an intern/working student.
             <br />
-            <br />
-            Other than tech, I really like working out, cooking and coming up
-            with new healthy recipes (check out my food blog{" "}
+            <br />I am passionate about software engineering and technology in
+            general. In my freetime I like working on software projects and
+            messing around with Raspberry Pi's or Arduino's. Other than tech, I
+            really like working out, cooking and coming up with new healthy
+            recipes (check out my food blog{" "}
             <a href="https://www.fillingfoodspot.com">here</a>).
             <br />
             <br />
