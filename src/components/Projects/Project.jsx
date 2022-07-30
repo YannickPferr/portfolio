@@ -32,7 +32,11 @@ const Project = ({ project }) => {
           </div>
         </div>
         <div className={styles.projectsColumn}>
-          <Image fluid={project.demoPic} />
+          {project.demoPic.type === "gif" ? (
+            <img src={project.demoPic.src} />
+          ) : (
+            <Image fluid={project.demoPic.src} />
+          )}
         </div>
       </div>
     </div>
