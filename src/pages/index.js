@@ -19,7 +19,7 @@ const IndexPage = () => {
         }
       }
 
-      resume: file(name: { eq: "resume2.0" }) {
+      resume: file(name: { eq: "resume" }) {
         name
         publicURL
       }

@@ -9,10 +9,10 @@ const ExperienceSection = () => {
       time: "since October 2021",
       title: "Software Engineer (IT-Trainee program) | Full Time",
       description: [
-        "Redesigned and rebuilt a supervised machine learning model for the treasury, to classify if customers are going to use their special repayment option of their loan, and boosted the F1-score of the old model by 22% (Python, scikit-learn, pandas)",
-        "Developed, tested, and maintained the frontend of a foreign exchange trading app and quickly rose to become one of the top performing devs in a team of 12, while also supporting other juniors (React, TypeScript, Styled Components)",
+        "Redesigned and rebuilt a supervised machine learning model for the treasury to predict if customers are going to use the special repayment option of their loan; boosted the F1-score of the old model by 22% (Python, scikit-learn, pandas)",
+        "Developed and unit-tested the frontend of a foreign exchange trading app; improved maintainability and the code review process by enforcing coding style conventions (React, TypeScript, Styled Components)",
+        "Implemented new REST API endpoints in the backend of the Commerzbank developer API portal and built a feature in the frontend that allowed users to see the deployment/staging status of their projects (React, Java Spring, REST APIs)",
         "Led a team of five interns/students to help different teams with the deployment of new APIs",
-        "Implemented new REST API endpoints in the backend of the Commerzbank developer API portal and built a feature in the frontend, that allowed users to see the deployment/staging status of their APIs (React, Java Spring)",
       ],
     },
     {
@@ -20,10 +20,10 @@ const ExperienceSection = () => {
       time: "January 2021 – June 2021",
       title: "Data Scientist | Master Thesis",
       description: [
-        "Researched how machine learning can be used to optimize a production scheduling problem (combinatorial optimization), drafted, implemented, and evaluated a solution, and completed the master thesis with grade 1,0",
-        "Extracted machine and production data from about a million excel files, analyzed, cleaned, and prepared it for the model",
-        "Implemented a reinforcement learning algorithm from scratch and achieved a 12% reduction in production time per production line, which corresponds to a yearly decrease in cost of about 300.000 € per production line",
-        "Analyzed results, translated them into business recommendations and presented them to senior management",
+        "Researched how machine learning can be used to optimize a production scheduling problem (combinatorial optimization); drafted, implemented, and evaluated a solution; completed the master thesis with the highest grade possible (1.0)",
+        "Extracted machine and production data from one million excel files, analyzed, cleaned, and prepared the data for the model",
+        "Implemented a reinforcement learning algorithm from scratch and achieved a 12% reduction in production time per production line which corresponds to a yearly decrease in costs of about 300.000 € per production line",
+        "Analyzed results, translated them into business recommendations, and presented them to senior management ",
         "Tech used: Python, JavaScript, pandas, TensorFlow, Keras, scikit-learn, Node-RED",
       ],
     },
@@ -32,9 +32,9 @@ const ExperienceSection = () => {
       time: "January 2018 – September 2021",
       title: "Software Engineer | Bachelor Thesis, Intern, Working Student",
       description: [
-        "Built an app for consultants to help them automate various tasks in the Salesforce Marketing Cloud (SF MC) like data migration and saved them multiple hours of tedious manual work in the process (Java, SQL, SF API)",
-        "Developed a full stack web app for clients running in SF MC so clients could export specific Marketing Cloud data to excel files, without them needing to know how to write SQL queries (JavaScript in frontend & backend, HTML, CSS, SQL)",
-        "Implemented a service, that exported millions of campaign tracking records from SF MC, processed them and imported them into Salesforce CRM, to help a client easily customize their campaign tracking reports (Java, Heroku, SF APIs)",
+        "Built an app for consultants to help them automate various tasks (e.g.: data migration) in the Salesforce Marketing Cloud (SF MC) and saved them multiple hours of tedious manual work in the process (Java, SQL, REST/SOAP APIs)",
+        "Developed a full stack web app for clients running in Marketing Cloud so clients could export specific data to excel files, without them needing to know how to write SQL queries (JavaScript in frontend & backend, HTML, CSS, SQL)",
+        "Implemented a service that exported millions of campaign tracking records from SF MC, processed them, and imported them into SF CRM to help a client easily customize their campaign tracking reports (Java, Heroku, REST/SOAP APIs)",
       ],
     },
   ]
