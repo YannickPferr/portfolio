@@ -84,6 +84,7 @@ const ProjectsSection = () => {
       demoLink: "http://collabothon-coba.vercel.app/",
       githubLink: "https://github.com/YannickPferr/collabothon-coba",
       demoPic: { type: "jpg", src: data.reNetworkPic.childImageSharp.fluid },
+      techUsed: ["JavaScript", "Next.js", "React", "Firebase"],
     },
     {
       name: "Deep Reinforcement Agent",
@@ -91,6 +92,12 @@ const ProjectsSection = () => {
         "Implemented two reinforcement learning algorithms (DDQN and REINFORCE) from scratch, one of which was used in my master thesis. The correctness of the implementation was tested with the test environments from OpenAI Gym.",
       githubLink: "https://github.com/YannickPferr/deep-learning",
       demoPic: { type: "gif", src: data.deepLearningGif.publicURL },
+      techUsed: [
+        "Python",
+        "Machine Learning",
+        "Reinforcement Learning",
+        "OpenAI Gym",
+      ],
     },
     {
       name: "YPSwap: ERC-20 Token Exchange",
@@ -99,6 +106,7 @@ const ProjectsSection = () => {
       demoLink: "https://ypswap.netlify.app/",
       githubLink: "https://github.com/YannickPferr/yp-swap",
       demoPic: { type: "jpg", src: data.ypSwapPic.childImageSharp.fluid },
+      techUsed: ["Solidity", "JavaScript", "React"],
     },
     {
       name: "Food Blog: The Filling Food Spot",
@@ -107,6 +115,7 @@ const ProjectsSection = () => {
       demoLink: "https://www.fillingfoodspot.com/",
       githubLink: "https://github.com/YannickPferr/blog",
       demoPic: { type: "jpg", src: data.foodBlogPic.childImageSharp.fluid },
+      techUsed: ["JavaScript", "React", "Gatsby.js", "Netlify", "Contentful"],
     },
     {
       name: "Blockchain System Explorer",
@@ -117,6 +126,13 @@ const ProjectsSection = () => {
         type: "jpg",
         src: data.blockchainExplorerPic.childImageSharp.fluid,
       },
+      techUsed: [
+        "Java",
+        "InfluxDB",
+        "Influx Chronograf",
+        "Influx Telegraf",
+        "Web3J",
+      ],
     },
     {
       name: "News Sentiment Analyzer",
@@ -124,6 +140,14 @@ const ProjectsSection = () => {
         "Built a web app with a team of students that searches for specific keywords in news articles, and then analyzes the sentiment of the text. The app uses Java, Apache Kafka and MongoDB to collect the data, Solr to analyze the text, and Redis and Node.js to visualize the data in a web interface.",
       githubLink: "https://github.com/YannickPferr/TUDITPM",
       demoPic: { type: "jpg", src: data.tuditpmPic.childImageSharp.fluid },
+      techUsed: [
+        "Java",
+        "JavaScript",
+        "MongoDB",
+        "Apache Kafka",
+        "Redis",
+        "Solr",
+      ],
     },
     {
       name: "Gorillas Game",
@@ -131,12 +155,14 @@ const ProjectsSection = () => {
         "Implemented the Gorillas game from the 90s in Java with a team of students. The game featured multiple maps, a high score table, configurable properties, and basic animations.",
       githubLink: "https://github.com/YannickPferr/Gorillas",
       demoPic: { type: "jpg", src: data.gorillasPic.childImageSharp.fluid },
+      techUsed: ["Java"],
     },
     {
       name: "Magic Mirror",
       description:
         "Built a smart mirror with a Raspberry Pi that could display various information. The backend was built upon a Node.js open-source library. Other than the basic features of the library, the mirror could play YouTube videos and Spotify tracks, and also be controlled through voice using Google STT.",
       demoPic: { type: "jpg", src: data.magicMirrorPic.childImageSharp.fluid },
+      techUsed: ["JavaScript", "Node.js", "Raspberry Pi"],
     },
   ]
 

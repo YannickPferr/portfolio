@@ -11,6 +11,14 @@ const Project = ({ project }) => {
         <div className={styles.projectsColumn}>
           <h2>{project.name}</h2>
           <p>{project.description}</p>
+          <div className={styles.techUsed}>
+            <b>Tech used:</b>
+            <ul className={styles.tech}>
+              {project.techUsed.map(tech => (
+                <li>{tech}</li>
+              ))}
+            </ul>
+          </div>
           <div className={styles.githubLink}>
             {project.demoLink && (
               <Button

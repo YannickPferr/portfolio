@@ -7,7 +7,7 @@ const HeroSection = ({ resume, mail, linkedin, github }) => {
   return (
     <header id="hero" className={styles.header}>
       <h1>Yannick Pferr</h1>
-      <h2>Software Engineer (IT-Trainee) @ Commerzbank</h2>
+      <h2>Software Engineer @ Commerzbank</h2>
       <h2 className={styles.contactIcons}>
         <a aria-label="mail" href={mail}>
           <FaEnvelope />

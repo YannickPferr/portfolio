@@ -21,7 +21,9 @@ a:hover {
   outline-width: 0;
 }
 
-p {
+p,
+b,
+li {
   font-size: 1.125em;
   margin: 0 0 1.45rem;
 }
