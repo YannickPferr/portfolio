@@ -1,14 +1,10 @@
-.vertical-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+@import "../../globals.scss";
 
 .contact {
   @extend .vertical-center;
   min-height: calc(80vh - 60px);
   text-align: center;
   padding: 1em;
-  color: white;
-  background: #00414b;
+  color: #{$color-primary};
+  background: #{$color-secondary};
 }

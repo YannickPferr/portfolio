@@ -5,8 +5,14 @@ import styles from "./ExperienceSection.module.scss"
 const ExperienceSection = () => {
   const experiences = [
     {
+      company: "Confluent Inc.",
+      time: "since January 2023",
+      title: "Software Engineer | Full Time",
+      description: ["Full Stack Engineer ksqlDB"],
+    },
+    {
       company: "Commerzbank AG",
-      time: "since October 2021",
+      time: "October 2021 - December 2022",
       title: "Software Engineer (IT-Trainee program) | Full Time",
       description: [
         "Redesigned and rebuilt a supervised machine learning model for the treasury to predict if customers are going to use the special repayment option of their loan; boosted the F1-score of the old model by 22% (Python, scikit-learn, pandas)",

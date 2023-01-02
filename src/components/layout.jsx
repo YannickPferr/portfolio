@@ -8,7 +8,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Header from "./Header/Header"
-import "./layout.css"
+import "./layout.scss"
 import SEO from "./SEO"
 
 const Layout = ({ title, children }) => {

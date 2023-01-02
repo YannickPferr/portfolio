@@ -1,3 +1,5 @@
+@import "../../globals.scss";
+
 .form {
   width: 80%;
   margin: 0 auto;
@@ -23,25 +25,6 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
-}
-
-.form-submit {
-  margin: 0.5em auto;
-  padding: 0.5em 2em 0.5em 2em;
-  text-transform: capitalize;
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  font-weight: bold;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border-radius: 0;
-}
-
-.form-submit:hover {
-  background-color: white;
-  color: #00414b;
-  cursor: pointer;
 }
 
 .clip {

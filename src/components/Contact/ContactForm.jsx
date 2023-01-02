@@ -1,4 +1,5 @@
 import React from "react"
+import Button from "../Button"
 import styles from "./ContactForm.module.scss"
 
 const ContactForm = () => {
@@ -48,12 +49,12 @@ const ContactForm = () => {
           required
         />
       </div>
-      <input
-        className={styles.formSubmit}
+      <Button
+        text="Get In Touch"
+        color={styles.colorSecondary}
+        backgroundColor={styles.colorTertiary}
         type="submit"
-        name="submit"
-        value="Get in touch"
-      />
+      ></Button>
     </form>
   )
 }

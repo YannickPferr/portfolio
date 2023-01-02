@@ -24,8 +24,8 @@ const Project = ({ project }) => {
               <Button
                 text="Live Demo"
                 href={project.demoLink}
-                color="#00414b"
-                backgroundColor="white"
+                color={styles.colorPrimary}
+                backgroundColor={styles.colorSecondary}
               ></Button>
             )}
             {project.githubLink && (

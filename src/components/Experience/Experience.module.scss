@@ -1,13 +1,9 @@
-.vertical-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+@import "../../globals.scss";
 
 .experience-container {
   @extend .vertical-center;
   width: 100%;
-  border-bottom: thin solid;
+  border-bottom: thin groove;
   margin: 0 1em;
   margin-top: 1em;
   padding: 1em 0;

@@ -14,11 +14,10 @@ const AboutSection = ({ image, resume }) => {
         <div className={styles.aboutColumn}>
           <h2>Welcome to my page!</h2>
           <p>
-            My name is Yannick Pferr, I have a masters degree in business
-            information systems from TU Darmstadt and am currently working as a
-            Software Engineer in the IT-Trainee program at Commerzbank. I have 1
-            year of professional software engineering experience and another 4
-            years of experience as an intern/working student.
+            My name is Yannick Pferr, I have a bachelors and masters degree in
+            business information systems from TU Darmstadt and am currently
+            working as a Full Stack Software Engineer in the ksqlDB team at
+            Confluent.
             <br />
             <br />I am passionate about software engineering and technology in
             general. In my freetime I like working on software projects and
@@ -37,8 +36,8 @@ const AboutSection = ({ image, resume }) => {
           <Button
             text="Resume"
             href={resume}
-            color="#00414b"
-            backgroundColor="white"
+            color={styles.colorPrimary}
+            backgroundColor={styles.colorSecondary}
           ></Button>
         </div>
       </div>
