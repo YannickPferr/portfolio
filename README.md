@@ -1,5 +1,6 @@
 ## Personal Website
 
-<img width="1509" alt="image" src="https://user-images.githubusercontent.com/37211050/180664681-228423ec-1627-4be1-9080-5d7ba0a65408.png">
+<img width="1728" alt="image" src="https://github.com/YannickPferr/portfolio/assets/37211050/ad5759ae-f554-4f6c-b7dd-bdeff683c93c">
 
-Check it out [here](www.pferr.de)!
+
+Check it out [here](https://www.pferr.de)!
